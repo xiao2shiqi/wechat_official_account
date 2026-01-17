@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xiao Bin's Portfolio | Visual NCE & AI Projects</title>
+    <meta name="description" content="肖斌的作品集展示，包含 Visual NCE 等 AI 赋能的创新项目。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+SC:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">XIAO BIN</div>
+            <nav>
+                <a href="#portfolio">作品</a>
+                <a href="#about">关于</a>
+                <a href="https://nce.xiao27.com" class="cta-btn" target="_blank">访问 Visual NCE</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1 class="fade-in">创意、技术与 <span class="gradient-text">AI 的融合</span></h1>
+                <p class="subtitle fade-in">探索如何通过 Vibe Coding 和 AI 绘图重塑经典学习体验。</p>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>近期作品</h2>
+                    <p>精选项目与实验性探索</p>
+                </div>
+                <div class="portfolio-grid" id="portfolioGrid">
+                    <!-- Project Card -->
+                    <div class="project-card" onclick="openDetails('vnce')">
+                        <div class="card-image">
+                            <img src="uploaded_image_0_1767160607399.jpg" alt="Visual NCE Project Cover">
+                            <div class="card-overlay">
+                                <span>查看详情</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Visual NCE</h3>
+                            <p>利用 AI 和 Vibe Coding 重构《新概念英语》</p>
+                            <div class="tags">
+                                <span class="tag">AI Art</span>
+                                <span class="tag">Vibe Coding</span>
+                                <span class="tag">Education</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Placeholder Card 1 -->
+                    <div class="project-card placeholder">
+                        <div class="card-image">
+                            <div class="skeleton-img"></div>
+                        </div>
+                        <div class="card-content">
+                            <h3>更多项目正在孵化...</h3>
+                            <p>敬请期待更多 AI 驱动的创意产品</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal for Project Details -->
+    <div id="projectModal" class="modal">
+        <div class="modal-backdrop" onclick="closeDetails()"></div>
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeDetails()">&times;</button>
+            <div id="modalBody">
+                <!-- Content will be injected here -->
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Xiao Bin (肖斌). Built with AI and Vibe Coding.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
