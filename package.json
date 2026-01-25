@@ -1,0 +1,22 @@
+{
+  "name": "wechat_official_account",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiao2shiqi/wechat_official_account.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xiao2shiqi/wechat_official_account/issues"
+  },
+  "homepage": "https://github.com/xiao2shiqi/wechat_official_account#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.58.0",
+    "@types/node": "^25.0.10"
+  }
+}
